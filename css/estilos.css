@@ -249,7 +249,7 @@ header{
   }
   
   .about{
-    background: url(img/teclado.jpg);
+    background: url(../img/teclado.jpg);
     height: auto;
   }
   
@@ -335,7 +335,7 @@ header{
   
   /* Footer */
   
-  footer{background:url(img/teclado.jpg);
+  footer{background:url(../img/teclado.jpg);
     
 
 }
