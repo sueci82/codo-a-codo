@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #5cd1eb;
+    --color-title: #000;
+    --align-title: left;
+    --paddin-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container:1200px;
+    --color-btn:#19abe9;
+    --text-btn: rgb(11, 30, 40);
+    --paddin-btn: 20px 35px;
+    --height-shape: 18em;
+    --color1: #375977;
+    --color2: #6acadf;
+    --color3: #5087e5;
+    --fondo: #ddf2f3;
+    --titulos: 33px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido:45px 
+    
+}
+
+:focus{
+    outline: none;
+}
+
+/* preLoader */
+
+.hidden{
+    overflow: hidden;
+  }
+  
+.centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+  
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #cef;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+  
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+  
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+  
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+  
+@keyframes lds-facebook {
+ 0% {
+   top: 6px;
+   height: 51px;
+ }
+  
+ 50%,
+ 100% {
+   top: 19px;
+   height: 26px;
+   }
+}
+
+
+
+/*encabezado*/
+
+
+body{
+    background: rgb(185, 222, 209);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 25px;
+    font-family: 'Lora', serif; 
+    background-color: #bee1df; opacity: 2;
+    background-image:  radial-gradient(#7bedef 0.5px, transparent 0.5px), radial-gradient(#4ee4f4 0.5px, #64ddf0 0.1px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+header{
+    width: 100%;
+    height:600px;
+    background: linear-gradient(to bottom,
+    rgb(193, 242, 238),
+    rgba(31, 197, 209, 0.6),
+    rgba(76, 141, 210, 0.874)
+    ), url(/img/pexels-kulbir-11115086.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    z-index: 9999;
+  }
+  
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color:rgb(36, 41, 29);
+  }
+  
+  .nav2{
+    background: var(--fondo);
+    height:100px;
+    color:#000;
+  }
+  
+  .contenedor-nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1000px;
+    height:inherit;
+    overflow: hidden;
+  }
+  
+  nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+  }
+  
+  nav .enlaces a:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+  }
+  
+  .logo, .logo img{
+    
+    height:60px;
+    border-radius: 100%;
+    
+    }
+  
+  .icono{
+    display:none;
+    font-size: 24px;
+    padding: 23.5px 20px; 
+  }
+  
+  .textos{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .textos>h1{font-size:80px;;}
+  
+  .textos>h2{font-size: 30px; font-weight: 300;}
+
+  .textos .general{
+    font-size: 20px; font-weight: 300;
+    color: rgb(22, 20, 20);
+    text-decoration: none;
+  }
+
+  .textos .general:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s
+  }
+
+/*main*/
+
+.contenedor{
+    
+    margin:auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+/*formulario para completar*/
+
+.form-wrap{
+    
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    background: rgb(170, 231, 215);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(31, 30, 30);
+
+}
+
+/*informacion de contacto izquierda*/
+
+.contact-info::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(134, 232, 207);
+    opacity: 0.5;
+}
+
+.contact-info{
+    
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+    background-image: url(/img/pexels-kulbir-11115086.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.info-titulo,
+.info-item{
+    position: relative;
+    z-index: 2;
+    color: rgb(2, 10, 18);
+}
+
+.info-titulo{
+    margin-bottom: 60px;
+}
+
+.info-titulo span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.info-titulo h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info-item p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-item img{
+    display: block;
+    margin: 0px auto;
+}
+
+.info-item, .p .correo{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 4px;
+    text-align: center;
+}
+
+.info-item p, .telefono{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 4px;
+    text-align: center;
+}
+
+
+.volver{
+    width: 180px;
+    background:rgb(50, 196, 199);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    float: right;
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.volver:hover{
+    background: rgb(48, 164, 125);
+
+}
+
+
+form.form-contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form-contact h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    
+}
+
+form.form-contact .user-info{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+form.form-contact label{
+    font-weight: 600;
+    border-bottom: #606060;
+}
+
+form.form-contact input{
+    width: 100%;
+    background:rgb(156, 223, 206);
+    padding: 3px 0px 2px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px rgb(50, 199, 162);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(15, 15, 15);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+form.form-contact textarea{
+    width: 100%;
+    padding: 3px 0px 1px;
+    background:rgb(156, 223, 206);
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px rgb(170, 231, 215);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form-contact input[type="button"]{
+    width: 180px;
+    background:rgb(40, 187, 187);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: flex-end;
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+form.form-contact input[type="button"]:hover{
+    background: rgb(48, 164, 125);
+}
+
+.modal-wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-modal{
+    background: azure;
+    box-shadow: 0px 0 px 15px rgba(0,0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20 px 15px;
+
+}
+
+.mensaje-modal h3{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mensaje-modal h3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c5c5c5;
+    margin: 10px 0px 15px;
+
+}
+
+.mensaje-modal p{
+    font-size: 16px;
+    color: #606060;
+
+}
+
+.mensaje-modal p::before{
+    content: "";
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:inline-block;
+    color: #c5c5c5;
+    margin-right: 18px;
+
+
+}
+
+#btnclose{
+    display: block;
+    padding:  3px 10px;
+    margin-top: 10px;
+    background: rgb(230, 142, 142);
+    border: 2px solid #dd6565;
+    cursor: pointer;
+    float:right;
+
+}
+
+/*footer*/
+
+footer{background:url(/img/teclado.jpg);
+    
+
+}
+  
+  .marca-logo{
+    width: 10%;
+    margin: auto;
+    margin-bottom: var(--espacios);
+  }
+  .marca-logo img{
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: 3px 3px 2px 2px  rgb(156, 232, 232);
+  }
+  
+  footer p{
+    margin-top:var(--espacios);
+  }
+
+  .footer{
+    position: relative;
+    
+}
+
+
+.footer_icon{
+    width: 4%;
+    box-shadow: 2px 2px 1px 1px  rgb(14, 12, 12);
+    background: #1e1e1e;
+}
+
+@media screen and (max-width: 700px){
+    .nav2{
+      color: #fff;
+    }
+  
+    .icono{
+      display:block;
+      cursor: pointer;
+    }
+  
+    .enlaces{
+      position: fixed;
+      top:80px;
+      background: #2c3e50;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+    }
+  
+    .enlaces a{
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #34495e;
+      color:#fff;
+    }
+  
+    .textos>h1{font-size: 70px;}
+    .textos>h2{font-size:35px;}
+
+    :root{
+        --margenes: 30px;
+      }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+      --espacios-contenido: 25px;
+    }
+  
+    .iconos{
+        margin: auto;
+      }
+      .contact-info{
+        display: none;
+      }
+
+      form.form-contact{
+        width: 100%;
+      }
+
+      .form-wrap{
+        width: 450px;
+      }
+    }
+
+    
+    
+
