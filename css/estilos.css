@@ -94,7 +94,7 @@ header{
     rgb(159, 233, 120),
     rgba(31, 197, 209, 0.6),
     rgba(76, 141, 210, 0.874)
-    ), url(/img/fondoc.png);
+    ), url(img/fondoc.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -249,7 +249,7 @@ header{
   }
   
   .about{
-    background: url(/img/teclado.jpg);
+    background: url(img/teclado.jpg);
     height: auto;
   }
   
@@ -335,7 +335,7 @@ header{
   
   /* Footer */
   
-  footer{background:url(/img/teclado.jpg);
+  footer{background:url(img/teclado.jpg);
     
 
 }
