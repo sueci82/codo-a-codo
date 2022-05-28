@@ -109,7 +109,7 @@ header{
     rgb(193, 242, 238),
     rgba(31, 197, 209, 0.6),
     rgba(76, 141, 210, 0.874)
-    ), url(/img/pexels-sies-studio-11674559.jpg);
+    ), url(../img/pexels-sies-studio-11674559.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -441,7 +441,7 @@ font-weight: 300;
 
 /*footer */
 
-  footer{background:url(img/teclado.jpg);
+  footer{background:url(../img/teclado.jpg);
     
 }
   
