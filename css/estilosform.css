@@ -115,7 +115,7 @@ header{
     rgb(193, 242, 238),
     rgba(31, 197, 209, 0.6),
     rgba(76, 141, 210, 0.874)
-    ), url(/img/pexels-kulbir-11115086.jpg);
+    ), url(img/pexels-kulbir-11115086.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -257,7 +257,7 @@ header{
     text-align: center;
     justify-content: center;
     
-    background-image: url(/img/pexels-kulbir-11115086.jpg);
+    background-image: url(img/pexels-kulbir-11115086.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -474,7 +474,7 @@ form.form-contact input[type="button"]:hover{
 
 /*footer*/
 
-footer{background:url(/img/teclado.jpg);
+footer{background:url(img/teclado.jpg);
     
 
 }
