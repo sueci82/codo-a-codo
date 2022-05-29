@@ -100,7 +100,6 @@
 body{
     background: rgb(185, 222, 209);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 25px;
     font-family: 'Lora', serif; 
     background-color: #bee1df; opacity: 2;
     background-image:  radial-gradient(#7bedef 0.5px, transparent 0.5px), radial-gradient(#4ee4f4 0.5px, #64ddf0 0.1px);
@@ -126,6 +125,7 @@ header{
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
     z-index: 9999;
+    top:0;
   }
   
   .nav1{
@@ -480,12 +480,12 @@ footer{background:url(../img/teclado.jpg);
 }
   
   .marca-logo{
-    width: 10%;
+    width: 40%;
     margin: auto;
     margin-bottom: var(--espacios);
   }
   .marca-logo img{
-    width: 100%;
+    width: 30%;
     border-radius: 20%;
     box-shadow: 3px 3px 2px 2px  rgb(156, 232, 232);
   }
@@ -564,6 +564,11 @@ footer{background:url(../img/teclado.jpg);
       .form-wrap{
         width: 450px;
       }
+        
+    .marca-logo{
+      width: 80%;
+    }
+    
     }
 
     
