@@ -29,7 +29,6 @@
 
 
 body{
-    padding-top: 25px;
     font-family: 'Lora', serif; 
     background-color: #bee1df; opacity: 2;
     background-image:  radial-gradient(#7bedef 0.5px, transparent 0.5px), radial-gradient(#4ee4f4 0.5px, #64ddf0 0.1px);
@@ -119,6 +118,7 @@ header{
     width: 100%;
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    top:0;
   }
   
   .nav1{
@@ -611,7 +611,7 @@ font-weight: 300;
     .card_container{
         width: 97%;
         grid-template-columns: 1fr;
-        grid-template-areas: repeat(4,1fr)
+        grid-template-areas:
         "card1"
         "card2"
         "card3"
